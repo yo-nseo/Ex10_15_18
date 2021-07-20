@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
@@ -20,9 +21,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_plus"
+            android:text="@string/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radio_minus"
+            android:text="@string/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radio_multi"
+            android:text="@string/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radio_divide"
+            android:text="@string/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
     <Button
         android:id="@+id/btn_plus"
-        android:text="@string/btn_plus"
+        android:text="@string/btn_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
